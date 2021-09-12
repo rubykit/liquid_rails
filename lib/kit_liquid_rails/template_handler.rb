@@ -1,11 +1,11 @@
-class LiquidRails::TemplateHandler
+class KitLiquidRails::TemplateHandler
 
   attr_reader :context
 
   # Note: local_assigns is not available in ViewComponents
   def self.call(template, source)
     source ||= template.source
-    "::LiquidRails::TemplateHandler.new(self).render(#{ source.inspect }, (defined?(local_assigns) ? local_assigns : nil))"
+    "::KitLiquidRails::TemplateHandler.new(self).render(#{ source.inspect }, (defined?(local_assigns) ? local_assigns : nil))"
   end
 
   def initialize(context)

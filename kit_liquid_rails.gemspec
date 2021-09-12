@@ -1,9 +1,9 @@
-require_relative 'lib/liquid_rails/version'
+require_relative 'lib/kit_liquid_rails/version'
 
-version = LiquidRails::VERSION
+version = KitLiquidRails::VERSION
 
 Gem::Specification.new do |s|
-  s.name        = 'liquid_rails'
+  s.name        = 'kit_liquid_rails'
   s.version     = version
   s.summary     = 'Add support for Liquid templates in Ruby on Rails.'
   s.description = 'Allows you to use .liquid templates in your views & ViewComponents.'
@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   }
 
   s.add_dependency 'liquid',         '~> 5.0'
-  s.add_dependency 'railties',       '~> 6.0.0'
+  s.add_dependency 'railties',       '~> 6.0'
   s.add_dependency 'view_component', '~> 2.40'
 
   s.add_development_dependency 'bundler'

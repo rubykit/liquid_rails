@@ -1,4 +1,4 @@
-module LiquidRails
+module KitLiquidRails
 
   VERSION = '0.1.0'
 

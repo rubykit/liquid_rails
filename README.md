@@ -13,14 +13,14 @@ Add this line to your application's Gemfile:
 
 ```ruby
 group :test, :development do
-  gem 'liquid_rails'
+  gem 'kit_liquid_rails'
 end
 ```
 
 Or, for a Ruby library, add this to your gemspec:
 
 ```ruby
-spec.add_dependency 'liquid_rails'
+spec.add_dependency 'kit_liquid_rails'
 ```
 
 And then run:
