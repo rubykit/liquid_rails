@@ -16,12 +16,12 @@ Gem::Specification.new do |s|
     'source_code_uri' => "https://github.com/rubykit/liquid_rails/tree/v#{ version }"
   }
 
-  s.add_dependency 'liquid',         '~> 5.0'
-  s.add_dependency 'railties',       '~> 6.0'
+  s.add_dependency 'liquid',         '>= 5.0'
+  s.add_dependency 'railties',       '>= 6.0'
   s.add_dependency 'view_component', '~> 2.40'
 
   s.add_development_dependency 'bundler'
-  s.add_development_dependency 'rails', '~> 6.0'
+  s.add_development_dependency 'rails', '>= 6.1'
   s.add_development_dependency 'rake'
 
   s.files        = `git ls-files`.split("\n")
